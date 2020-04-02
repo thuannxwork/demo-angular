@@ -1,0 +1,4 @@
+<h3>{{ cityName === '' ? 'Bạn hãy nhập mã thành phố!' : ('Nhiệt độ tại ' + cityName + ' hiện tại là ' + temp + ' độ C') }}</h3>
+<input placeholder="Nhập mã thành phố" [(ngModel)]="txtCityName">
+<br>
+<button (click)="getWeather()">Tra cứu</button>

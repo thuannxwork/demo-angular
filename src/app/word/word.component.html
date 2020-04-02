@@ -1,0 +1,6 @@
+<p>Biến en: {{ en }}</p>
+<h3>Biến vn: {{ vn }}</h3>
+<p>Biến forgot: {{ forgot }}</p>
+<button (click)="toggleForgot()">Bấm vào đây để xem gái xinh</button>
+<img src="{{ imageUrl }}" alt="" [hidden]="!forgot">
+<img [src]="imageUrl2" alt="" [hidden]="forgot">
