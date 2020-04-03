@@ -1,0 +1,11 @@
+<button (click)="addWord()">Thêm từ mới</button>
+<br>
+<div *ngIf="isShowForm">
+    <input placeholder="Nhập từ tiếng anh" [(ngModel)]="newEn" />
+    <br>
+    <input placeholder="Nhập nghĩa tiếng việt" [(ngModel)]="newVn" />
+</div>
+<div *ngFor="let word of arrWords" class="word">
+    <h4 [ngStyle]="{color: word.memorized ? 'green' : 'red'}">{{ word.en }}</h4><p>{{ word.vn }}</p>
+    <button (click)="removeWord(word.id)">Xóa</button>
+</div>

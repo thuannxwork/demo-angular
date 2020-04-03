@@ -9,6 +9,7 @@ import { WordComponent } from './word/word.component';
 import { UserFormComponent } from './user-form/user-form.component';
 import { WeatherComponent } from './weather/weather.component';
 import { StructComponent } from './struct/struct.component';
+import { WordsComponent } from './words/words.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { StructComponent } from './struct/struct.component';
     WordComponent,
     UserFormComponent,
     WeatherComponent,
-    StructComponent
+    StructComponent,
+    WordsComponent
   ],
   imports: [
     BrowserModule,
