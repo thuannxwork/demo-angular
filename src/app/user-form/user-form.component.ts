@@ -22,9 +22,15 @@ export class UserFormComponent implements OnInit {
 
   isHighlight = true;
 
+  evenStyle = { color: 'red'};
+  oddStyle = { color: 'black'};
+
+  
   changeHighlight(){
     this.isHighlight = this.name.length % 2 === 0;
     console.log(this.isHighlight);
     return this.isHighlight;
   }
+  
+  currentClass = {circle: !this.changeHighlight(), square: this.changeHighlight()}
 }

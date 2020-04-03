@@ -1,0 +1,8 @@
+<button (click)="isShow = !isShow">Bấm để ẩn hiện </button>
+<p *ngIf="isShow">struct works!</p>
+<p>Danh sách môn học</p>
+<ul>
+    <li *ngFor="let subject of arrSubjects">
+        <p>{{ subject }}</p>
+    </li>
+</ul>

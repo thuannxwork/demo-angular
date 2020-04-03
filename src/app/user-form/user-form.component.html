@@ -2,8 +2,12 @@
 <!-- <br> -->
 <input placeholder="Enter username 2" [(ngModel)]="name" #txtUsername>
 <!-- <h3 [style.color]="changeHighlight() ? 'red' : 'black'"> -->
-<h3 [style.color]="changeHighlight() ? 'red' : 'blue'">
-    Your name is: {{ name }}
+<!-- <h3 [style.color]="changeHighlight() ? 'red' : 'blue'">
+    Your name is 1: {{ name }}
+</h3> -->
+<h3 [ngStyle]="changeHighlight() ? evenStyle : oddStyle">
+    Your name is 2: {{ name }}
 </h3>
 <code>{{ txtUsername.value | json }}</code>
-<div [class]="changeHighlight() ? 'circle' : 'square'"></div>
+<!-- <div [class]="changeHighlight() ? 'circle' : 'square'"></div> -->
+<div [ngClass]="currentClass"></div>

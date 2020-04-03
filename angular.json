@@ -34,7 +34,6 @@
             "scripts": [
               "./node_modules/jquery/dist/jquery.min.js",
               "./node_modules/bootstrap/dist/js/bootstrap.min.js"
-
             ]
           },
           "configurations": {
@@ -129,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "demo-angular"
+    }
+  },
+  "defaultProject": "demo-angular",
+  "cli": {
+    "analytics": "ac1cf9c5-e885-4e53-8fe5-e796351aa99c"
+  }
 }
