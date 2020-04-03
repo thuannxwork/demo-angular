@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./words.component.scss']
 })
 export class WordsComponent implements OnInit {
+  filterStatus = 'XEM_TAT_CA';
 
   constructor() { }
 
@@ -45,4 +46,5 @@ export class WordsComponent implements OnInit {
     const index = this.arrWords.findIndex(word => word.id === id);
     this.arrWords.splice(index, 1);
   }
+
 }
