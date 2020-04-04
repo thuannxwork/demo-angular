@@ -1,0 +1,11 @@
+<h2>{{1.1 | roundNum: true}}</h2>
+<h2>{{9.9 | roundNum: false}}</h2>
+<p>
+    {{ currentDate | date: "shortTime"}}
+</p>
+<p>Without JSON pipe:</p>
+<pre>{{object}}</pre>
+<p>With JSON pipe:</p>
+<pre>{{object | json}}</pre>
+<pre>{{object.foo | uppercase}}</pre>
+<pre>{{object | json | uppercase}}</pre>
