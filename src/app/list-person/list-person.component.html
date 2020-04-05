@@ -1,3 +1,4 @@
-<ng-container *ngFor="let person of arrPeople">
+<ng-container *ngFor="let person of arrPeople | paginate: { itemsPerPage: 2, currentPage: p }">
     <app-person [name]="person.name" [age]="person.age"></app-person>
 </ng-container>
+<pagination-controls (pageChange)="p = $event"></pagination-controls>

@@ -17,6 +17,7 @@ import { ChildComponent } from './child/child.component';
 import { CardComponent } from './card/card.component';
 import { LearnPipeComponent } from './learn-pipe/learn-pipe.component';
 import { RoundPipe } from './round-pipe/round-pipe.component';
+import { NgxPaginationModule } from 'ngx-pagination';
 
 @NgModule({
   declarations: [
@@ -38,7 +39,8 @@ import { RoundPipe } from './round-pipe/round-pipe.component';
     BrowserModule,
     HttpModule,
     FormsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    NgxPaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]
